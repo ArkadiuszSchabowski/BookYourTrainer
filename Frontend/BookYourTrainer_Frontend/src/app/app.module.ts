@@ -7,6 +7,7 @@ import { MainPageComponent } from './logout-components/main-page/main-page.compo
 import { NavbarComponent } from './logout-components/navbar/navbar.component';
 import { LoginComponent } from './logout-components/login/login.component';
 import { RegisterComponent } from './logout-components/register/register.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RegisterComponent } from './logout-components/register/register.compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
