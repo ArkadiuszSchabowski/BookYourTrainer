@@ -35,3 +35,16 @@ body {
   background-color: mat.get-color-from-palette($primary) !important;
   color: mat.get-color-from-palette($accent, 50) !important;
 }
+.sub-container{
+  min-height: calc(100vh - 50px);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sub-container{
+  min-height: calc(100vh - 70px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sub-container{
+  min-height: calc(100vh - 70px);
+  }
+}
