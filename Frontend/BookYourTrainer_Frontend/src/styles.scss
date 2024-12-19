@@ -1,18 +1,20 @@
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 
 @include mat.core();
 
 $primary: mat.define-palette(mat.$indigo-palette, 500);
-$accent: mat.define-palette(mat.$grey-palette, 50); 
+$accent: mat.define-palette(mat.$grey-palette, 50);
 $warn: mat.define-palette(mat.$red-palette, 500);
 
-$theme: mat.define-light-theme((
-  color: (
-    primary: $primary,
-    accent: $accent,
-    warn: $warn,
+$theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $primary,
+      accent: $accent,
+      warn: $warn,
+    ),
   )
-));
+);
 
 @include mat.all-component-themes($theme);
 
@@ -22,7 +24,8 @@ $theme: mat.define-light-theme((
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -35,16 +38,52 @@ body {
   background-color: mat.get-color-from-palette($primary) !important;
   color: mat.get-color-from-palette($accent, 50) !important;
 }
-.sub-container{
+.sub-container {
   min-height: calc(100vh - 50px);
 }
+.left-container {
+  width: 0vw;
+  height: 100%;
+  background-image: url(../src/assets/login-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.right-container {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: mat.get-color-from-palette($accent, 400) !important;
+}
+.right-container-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50%;
+  background-color: mat.get-color-from-palette($accent, 300) !important;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .sub-container{
-  min-height: calc(100vh - 70px);
+  .sub-container {
+    min-height: calc(100vh - 70px);
+  }
+  .left-container {
+    width: 50vw;
+  }
+  .right-container {
+    width: 50vw;
   }
 }
 @media screen and (min-width: 1200px) {
-  .sub-container{
-  min-height: calc(100vh - 70px);
+  .sub-container {
+    min-height: calc(100vh - 70px);
+  }
+  .left-container {
+    width: 50vw;
+  }
+  .right-container {
+    width: 50vw;
   }
 }
