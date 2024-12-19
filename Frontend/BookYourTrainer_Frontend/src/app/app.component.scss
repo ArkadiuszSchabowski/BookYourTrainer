@@ -5,12 +5,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
 }
 app-navbar{
-    height: 50px;
     width: 100%;
+    height: 50px;
     color: mat.get-color-from-palette(theme.$accent) !important;
     background-color: mat.get-color-from-palette(theme.$primary) !important;
 }
