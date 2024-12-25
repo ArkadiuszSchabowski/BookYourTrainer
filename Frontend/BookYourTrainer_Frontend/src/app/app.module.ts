@@ -10,6 +10,7 @@ import { RegisterComponent } from './logout-components/register/register.compone
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { ResetPasswordComponent } from './logout-components/reset-password/reset-password.component';
+import { BookingComponent } from './logout-components/booking/booking.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ResetPasswordComponent } from './logout-components/reset-password/reset
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    BookingComponent
   ],
   imports: [
     BrowserModule,
