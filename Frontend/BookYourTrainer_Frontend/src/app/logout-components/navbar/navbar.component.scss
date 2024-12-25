@@ -1,13 +1,29 @@
-#navbar-container{
+@use '@angular/material' as mat;
+@use 'src/styles' as theme;
+
+mat-toolbar{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    justify-content: right;
-    align-items: center;
-    padding-right: 20px;
+    color: mat.get-color-from-palette(theme.$accent) !important;
+    background-color: mat.get-color-from-palette(theme.$primary) !important;
 }
-
-button{
+#navigation-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+}
+#language-button-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 10%;
+}
+#language-button{
     width: 30px;
     height: 30px;
     background-image: url(../../../assets/flags/poland.png);
@@ -15,16 +31,47 @@ button{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.navbar-button{
+    display: none;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    button{
+    #navigation-container{
+        width: 94%;
+        justify-content: center;
+    }
+    #language-button-container{
+        width: 6%;
+    }
+    #menu-button{
+        display: none;
+    }
+    #language-button{
         width: 40px;
         height: 40px;
+    }
+    .navbar-button{
+        display: flex;
+        padding: 0 30px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    button{
+    #navigation-container{
+        width: 96%;
+        justify-content: center;
+    }
+    #language-button-container{
+        width: 4%;
+    }
+    #menu-button{
+        display: none;
+    }
+    #language-button{
         width: 40px;
         height: 40px;
+    }
+    .navbar-button{
+        display: flex;
+        padding: 0 100px;
     }
 }

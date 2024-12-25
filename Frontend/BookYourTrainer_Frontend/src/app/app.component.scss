@@ -15,8 +15,6 @@ app-navbar{
     min-height: 50px;
     justify-content: center;
     align-items: center;
-    color: mat.get-color-from-palette(theme.$accent) !important;
-    background-color: mat.get-color-from-palette(theme.$primary) !important;
 }
 router-outlet{
     margin-top: 70px;

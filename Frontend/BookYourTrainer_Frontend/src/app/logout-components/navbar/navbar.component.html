@@ -1,3 +1,37 @@
-<div id="navbar-container">
-    <button></button>
-</div>
+<mat-toolbar>
+  <div id="navigation-container">
+    <button mat-button [matMenuTriggerFor]="menu" id="menu-button">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="menu"
+      ></mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="">Strona główna</button>
+      <button mat-menu-item routerLink="/register">Rejestracja</button>
+      <button mat-menu-item routerLink="/login">Logowanie</button>
+      <button mat-menu-item routerLink="/booking">Rezerwacje</button>
+      <button mat-menu-item routerLink="/contact">Kontakt</button>
+    </mat-menu>
+
+    <button mat-button routerLink="" class="navbar-button">
+      Strona główna
+    </button>
+    <button mat-button routerLink="/register" class="navbar-button">
+      Rejestracja
+    </button>
+    <button mat-button routerLink="/login" class="navbar-button">
+      Logowanie
+    </button>
+    <button mat-button routerLink="/booking" class="navbar-button">
+      Rezerwacje
+    </button>
+    <button mat-button routerLink="/contact" class="navbar-button">
+      Kontakt
+    </button>
+  </div>
+  <div id="language-button-container">
+    <button id="language-button"></button>
+  </div>
+</mat-toolbar>

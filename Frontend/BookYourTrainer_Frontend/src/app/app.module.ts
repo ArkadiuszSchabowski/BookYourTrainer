@@ -12,6 +12,9 @@ import {MatButtonModule} from '@angular/material/button';
 import { ResetPasswordComponent } from './logout-components/reset-password/reset-password.component';
 import { BookingComponent } from './logout-components/booking/booking.component';
 import { ContactComponent } from './logout-components/contact/contact.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { ContactComponent } from './logout-components/contact/contact.component'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
