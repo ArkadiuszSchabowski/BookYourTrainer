@@ -9,6 +9,7 @@ mat-toolbar{
     height: 100%;
     color: mat.get-color-from-palette(theme.$accent) !important;
     background-color: mat.get-color-from-palette(theme.$primary) !important;
+    border-bottom: solid 2px white;
 }
 #navigation-container{
     display: flex;
