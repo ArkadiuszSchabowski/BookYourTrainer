@@ -27,9 +27,7 @@ $theme: mat.define-light-theme(
 html,
 body {
   height: 100%;
-}
-
-body {
+  background-color: mat.get-color-from-palette($primary, 600);
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
@@ -55,7 +53,10 @@ body {
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: mat.get-color-from-palette($accent, 400) !important;
+  background-image: url(../src/assets/login-background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .right-container-form{
   display: flex;
@@ -63,7 +64,8 @@ body {
   align-items: center;
   width: 80%;
   height: 50%;
-  background-color: mat.get-color-from-palette($accent, 300) !important;
+  background-color: mat.get-color-from-palette($primary);
+  border: 2px solid white;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .sub-container {
@@ -74,6 +76,7 @@ body {
   }
   .right-container {
     width: 50vw;
+    background-image: none;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -85,5 +88,6 @@ body {
   }
   .right-container {
     width: 50vw;
+    background-image: none;
   }
 }
