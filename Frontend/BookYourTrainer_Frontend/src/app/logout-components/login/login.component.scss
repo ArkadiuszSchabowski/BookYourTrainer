@@ -5,10 +5,20 @@
   height: 100%;
   margin-top: -20px;
 }
+.left-container{
+  background-image: url(../../../assets/login-background.png);
+}
+.right-container{
+  background-image: url(../../../assets/login-background.png)
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
+  .right-container{
+    background-image: none;
+  }
 }
 @media screen and (min-width: 1200px) {
-
+  .right-container{
+    background-image: none;
+  }
 }
