@@ -13,5 +13,7 @@
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.57.0" />
   </ItemGroup>
-
+	<ItemGroup>
+		<Protobuf Include="Protos\*.proto" OutputDir="Models"/>
+	</ItemGroup>
 </Project>
