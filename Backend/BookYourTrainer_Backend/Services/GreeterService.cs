@@ -1,4 +1,5 @@
 using BookYourTrainer_Backend;
+using Greet;
 using Grpc.Core;
 
 namespace BookYourTrainer_Backend.Services
