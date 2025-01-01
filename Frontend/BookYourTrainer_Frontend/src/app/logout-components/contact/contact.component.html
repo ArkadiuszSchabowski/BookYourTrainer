@@ -1,8 +1,26 @@
 <div id="contact-container" class="sub-container">
-    <div class="left-container"></div>
-    <div class="right-container">
-      <div class="right-container-form">
-      </div>
-    </div>
+  <div class="left-container"></div>
+  <div class="right-container">
+    <mat-card appearance="outlined">
+      <mat-card-content>
+        <form autocomplete="off">
+          <mat-form-field>
+            <mat-label>Twoje imię</mat-label>
+            <input matInput />
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Twój adres e-mail</mat-label>
+            <input matInput />
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Treść wiadomości</mat-label>
+            <textarea matInput id="text-area"></textarea>
+          </mat-form-field>
+          <div id="submit-button-container">
+            <button mat-raised-button class="submit-button">Wyślij</button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
   </div>
-  
+</div>
